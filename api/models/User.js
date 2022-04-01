@@ -5,8 +5,8 @@ const UserSchema = new mongoose.Schema(
     username: {
       type: String,
       require: true,
-      min: 3,
-      max: 20,
+      min: 2,
+      max: 30,
       unique: true,
     },
     email: {
@@ -18,7 +18,7 @@ const UserSchema = new mongoose.Schema(
     password: {
       type: String,
       required: true,
-      min: 6,
+      min: 5,
     },
     profilePicture: {
       type: String,
@@ -44,18 +44,15 @@ const UserSchema = new mongoose.Schema(
       type: String,
       max: 50,
     },
+    breed: {
+      type: String,
+      max: 50,
+    },
     city: {
       type: String,
       max: 50,
     },
-    from: {
-      type: String,
-      max: 50,
-    },
-    relationship: {
-      type: Number,
-      enum: [1, 2, 3],
-    },
+
   },
   { timestamps: true }
 );
