@@ -4,15 +4,11 @@ import {
   RssFeed,
   Chat,
   PlayCircleFilledOutlined,
-  Group,
   Bookmark,
   HelpOutline,
-  WorkOutline,
   Event,
-  School,
 } from "@material-ui/icons";
 import { Users } from "../../dummyData";
-import CloseFriend from "../pack/CloseFriend";
 
 export default function Sidebar() {
   return (
@@ -30,10 +26,6 @@ export default function Sidebar() {
           <li className="sidebarListItem">
             <PlayCircleFilledOutlined className="sidebarIcon" />
             <span className="sidebarListItemText">Videos</span>
-          </li>
-          <li className="sidebarListItem">
-            <Group className="sidebarIcon" />
-            <span className="sidebarListItemText">Packs</span>
           </li>
           <li className="sidebarListItem">
             <Bookmark className="sidebarIcon" />

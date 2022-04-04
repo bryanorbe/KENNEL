@@ -21,9 +21,9 @@ export default function Login() {
     <div className="login">
       <div className="loginWrapper">
         <div className="loginLeft">
-          <h3 className="loginLogo">Lamasocial</h3>
+          <h3 className="loginLogo">KENNEL</h3>
           <span className="loginDesc">
-            Connect with friends and the world around you on Lamasocial.
+            Find your pack with the premier canine social media!
           </span>
         </div>
         <div className="loginRight">
@@ -39,7 +39,7 @@ export default function Login() {
               placeholder="Password"
               type="password"
               required
-              minLength="6"
+              minLength="5"
               className="loginInput"
               ref={password}
             />
