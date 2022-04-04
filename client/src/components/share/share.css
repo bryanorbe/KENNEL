@@ -67,11 +67,11 @@
     border: none;
     padding: 7px;
     border-radius: 5px;
-    background-color: green;
+    background-color: #4a897b;
     font-weight: 500;
     margin-right: 20px;
     cursor: pointer;
-    color: white;
+    color: #f8f8f7;
 }
 
 .shareImgContainer{
