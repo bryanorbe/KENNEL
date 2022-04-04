@@ -4,15 +4,11 @@ import {
   RssFeed,
   Chat,
   PlayCircleFilledOutlined,
-  Group,
   Bookmark,
   HelpOutline,
-  WorkOutline,
   Event,
-  School,
 } from "@material-ui/icons";
 import { Users } from "../../dummyData";
-import CloseFriend from "../closeFriend/CloseFriend";
 
 export default function Sidebar() {
   return (
@@ -32,10 +28,6 @@ export default function Sidebar() {
             <span className="sidebarListItemText">Videos</span>
           </li>
           <li className="sidebarListItem">
-            <Group className="sidebarIcon" />
-            <span className="sidebarListItemText">Packs</span>
-          </li>
-          <li className="sidebarListItem">
             <Bookmark className="sidebarIcon" />
             <span className="sidebarListItemText">Bookmarks</span>
           </li>
@@ -52,7 +44,7 @@ export default function Sidebar() {
         <hr className="sidebarHr" />
         <ul className="sidebarFriendList">
           {Users.map((u) => (
-            <CloseFriend key={u.id} user={u} />
+            <packMate key={u.id} user={u} />
           ))}
         </ul>
       </div>
