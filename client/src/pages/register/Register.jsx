@@ -2,6 +2,7 @@ import axios from "axios";
 import { useRef } from "react";
 import "./register.css";
 import { useHistory } from "react-router";
+import logo from "../../assets/LogoDogo.png"
 
 export default function Register() {
   const username = useRef();
@@ -33,6 +34,14 @@ export default function Register() {
     <div className="login">
       <div className="loginWrapper">
         <div className="loginLeft">
+
+        <div className="col-md-3 col-sm-12 d-flex align-items-center justify-content-center">
+              <div>
+                <img src={logo} className="d-flex profile-img" alt=" LogoDogo " />
+              </div>
+            </div>
+
+
           <h3 className="loginLogo">Kennel</h3>
           <span className="loginDesc">
             Find your pack on the premiere canine social media!
